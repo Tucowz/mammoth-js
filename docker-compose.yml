@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  docx-to-html:
+    build: .
+    container_name: docx-to-html
+    restart: always
+    environment:
+      - PORT=3000
+    # ports:
+    #   - "3010:3000" # externa:interna — ex: http://servidor:3010/convert
